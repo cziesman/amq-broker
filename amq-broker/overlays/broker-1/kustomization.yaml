@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - ../../base
   - configmap.yaml
+  - statefulset.yaml
 
-patches:
-  - path: statefulset-patch.yaml
+#patches:
+#  - path: statefulset-patch.yaml
