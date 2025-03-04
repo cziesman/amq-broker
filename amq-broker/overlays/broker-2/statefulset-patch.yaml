@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: amq-broker
+spec:
+  serviceName: "amq-broker-2"
+  template:
+    metadata:
+      labels:
+        app: amq-broker-2
+    spec:
+      containers:
+        - name: activemq-artemis
+          ports:
+            - containerPort: 62616  # Different port
+            - containerPort: 8261   # Different web console port
+          volumeMounts:
+            - name: broker-storage
+              mountPath: /var/lib/artemis/data
+      volumes:
+        - name: broker-storage
+          persistentVolumeClaim:
+            claimName: amq-broker-2-pvc
+        - name: broker-config
+          configMap:
+            name: amq-broker-2-config
