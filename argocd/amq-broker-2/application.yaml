@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amq-broker-1
+  name: amq-broker-2
 spec:
   project: default
   source:
