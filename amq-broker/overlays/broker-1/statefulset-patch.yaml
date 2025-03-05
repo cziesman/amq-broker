@@ -9,9 +9,9 @@ spec:
     matchLabels:
       app: amq-broker-1
   template:
-    metadata:
-      labels:
-        app: amq-broker-1
+#    metadata:
+#      labels:
+#        app: amq-broker-1
     spec:
       containers:
         - name: activemq-artemis

@@ -5,9 +5,12 @@ namespace: amq
 
 nameSuffix: "-1"
 
+commonLabels:
+  app: amq-broker-1
+
 resources:
   - ../../base
 
-patchesStrategicMerge:
+patches:
   - path: statefulset-patch.yaml
 #  - path: configmap-patch.yaml
