@@ -7,17 +7,17 @@ spec:
     app: amq-broker-2
   ports:
     - name: core-messaging-2
-      port: 61616
+      port: 62616
       targetPort: 62616
     - name: web-console-2
-      port: 8161
+      port: 8261
       targetPort: 8261
     - name: amqp-2
-      port: 5672
+      port: 6672
       targetPort: 6672
     - name: mqtt-2
-      port: 1883
+      port: 2883
       targetPort: 2883
     - name: stomp-2
-      port: 61613
+      port: 62613
       targetPort: 62613
