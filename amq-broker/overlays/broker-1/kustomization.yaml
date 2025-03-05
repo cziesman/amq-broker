@@ -8,6 +8,6 @@ nameSuffix: "-1"
 resources:
   - ../../base
 
-patches:
+patchesStrategicMerge:
   - path: statefulset-patch.yaml
 #  - path: configmap-patch.yaml
