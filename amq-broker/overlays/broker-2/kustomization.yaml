@@ -5,8 +5,10 @@ namespace: amq
 
 nameSuffix: "-2"
 
-commonLabels:
-  app: amq-broker-2
+labels:
+  - includeSelectors: true
+    pairs:
+      app: amq-broker-2
 
 resources:
   - ../../base
