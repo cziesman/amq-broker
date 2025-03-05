@@ -4,19 +4,3 @@ metadata:
   name: amq-broker
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-data:
-  broker.xml: |
-    <?xml version="1.0" encoding="UTF-8"?>
-    <configuration xmlns="urn:activemq">
-        <core>
-            <name>AMQ Broker 1</name>
-            <paging-directory>/var/lib/artemis/data/paging</paging-directory>
-            <bindings-directory>/var/lib/artemis/data/bindings</bindings-directory>
-            <journal-directory>/var/lib/artemis/data/journal</journal-directory>
-            <large-messages-directory>/var/lib/artemis/data/large-messages</large-messages-directory>
-            <acceptors>
-                <acceptor name="artemis">tcp://0.0.0.0:61616</acceptor>
-                <acceptor name="websocket">ws://0.0.0.0:61614</acceptor>
-            </acceptors>
-        </core>
-    </configuration>
