@@ -14,4 +14,5 @@ resources:
 patches:
   - path: configmap-patch.yaml
   - path: pvc-patch.yaml
+  - path: service-patch.yaml
   - path: statefulset-patch.yaml
