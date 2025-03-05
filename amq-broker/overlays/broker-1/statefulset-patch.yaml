@@ -1,10 +1,9 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: amq-broker
+  name: amq-broker-1
 spec:
   serviceName: "amq-broker-1"
-  replicas: 1
   selector:
     matchLabels:
       app: amq-broker-1
