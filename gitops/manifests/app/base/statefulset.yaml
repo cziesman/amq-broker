@@ -13,6 +13,11 @@ spec:
               value: redhat
             - name: AMQ_PASSWORD
               value: redhat
+            - name: BROKER_XML
+              valueFrom:
+                configMapKeyRef:
+                  name: broker-config
+                  key: broker.xml
           image: registry.redhat.io/amq7/amq-broker-rhel8:7.11.7-4.1740580601
           volumeMounts:
             - name: broker-storage
