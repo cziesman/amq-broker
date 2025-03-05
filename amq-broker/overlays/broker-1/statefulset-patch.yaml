@@ -14,17 +14,6 @@ spec:
           env:
             - name: AMQ_NAME
               value: amq-broker-1
-          ports:
-            - containerPort: 61616
-              name: openwire
-            - containerPort: 8161
-              name: console
-            - containerPort: 5672
-              name: amqp
-            - containerPort: 1883
-              name: mqtt
-            - containerPort: 61613
-              name: stomp
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
