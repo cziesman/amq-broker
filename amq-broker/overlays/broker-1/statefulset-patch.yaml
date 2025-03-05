@@ -23,7 +23,7 @@ spec:
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
-            claimName: amq-broker-1-pvc
+            claimName: amq-broker-1
         - name: broker-config
           configMap:
             name: amq-broker-1
