@@ -11,8 +11,10 @@ spec:
     spec:
       containers:
         - env:
-            - AMQ_USER=redhat
-            - AMQ_PASSWORD=redhat
+            - name: AMQ_USER
+              value: redhat
+            - name: AMQ_PASSWORD
+              value: redhat
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
