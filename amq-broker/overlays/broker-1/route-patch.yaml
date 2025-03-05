@@ -9,4 +9,4 @@ spec:
     name: amq-broker-1
     weight: 100
   port:
-    targetPort: 8161
+    targetPort: web-console-1

@@ -9,4 +9,4 @@ spec:
     name: amq-broker-2
     weight: 100
   port:
-    targetPort: 8261
+    targetPort: web-console-2
