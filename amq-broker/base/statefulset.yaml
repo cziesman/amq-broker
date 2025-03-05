@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: activemq-artemis
-          image: registry.redhat.io/amq-broker-rhel8:7.11.7-4.1740580601
+          image: registry.redhat.io/amq7/amq-broker-rhel8:7.11.7-4.1740580601
           volumeMounts:
             - name: broker-storage
               mountPath: /var/lib/artemis/data
