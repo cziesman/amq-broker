@@ -3,7 +3,7 @@ kind: Kustomization
 
 namespace: amq
 
-nameSuffix: -1
+nameSuffix: "-2"
 
 resources:
   - ../../base
