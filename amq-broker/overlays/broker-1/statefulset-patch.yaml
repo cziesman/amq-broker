@@ -18,6 +18,6 @@ spec:
         - name: broker-storage
           persistentVolumeClaim:
             claimName: amq-broker-1
-        - name: broker-config
-          configMap:
-            name: amq-broker-1
+#        - name: broker-config
+#          configMap:
+#            name: amq-broker-1

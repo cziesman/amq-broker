@@ -17,6 +17,6 @@ spec:
           volumeMounts:
             - name: broker-storage
               mountPath: /var/lib/artemis/data
-            - name: broker-config
-              mountPath: /var/lib/artemis/etc/broker.xml
-              subPath: broker.xml
+#            - name: broker-config
+#              mountPath: /var/lib/artemis/etc/broker.xml
+#              subPath: broker.xml
