@@ -7,7 +7,7 @@ nameSuffix: "-1"
 
 resources:
   - ../../base
-  - configmap.yaml
 
 patches:
   - path: statefulset-patch.yaml
+  - path: configmap-patch.yaml

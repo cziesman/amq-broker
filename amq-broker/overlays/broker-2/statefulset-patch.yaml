@@ -27,4 +27,4 @@ spec:
             claimName: amq-broker-2-pvc
         - name: broker-config
           configMap:
-            name: amq-broker-2-config
+            name: amq-broker
