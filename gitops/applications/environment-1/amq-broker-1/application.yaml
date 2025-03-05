@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amq-broker-2
+  name: cluster-1-amq-broker-1
 spec:
   project: default
   source:
     repoURL: https://github.com/cziesman/amq-broker.git
     targetRevision: main
-    path: amq-broker/overlays/broker-2
+    path: gitops/manifests/app/overlays/environment-1/broker-1
   destination:
     server: https://kubernetes.default.svc
-    namespace: amq
-#  syncPolicy:
-#    automated:
-#      prune: true
-#      selfHeal: true
+    namespace: demo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

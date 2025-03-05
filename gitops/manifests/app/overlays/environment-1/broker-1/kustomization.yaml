@@ -1,20 +1,19 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: amq
+namespace: amq-demo
 
-nameSuffix: "-2"
+nameSuffix: "-1"
 
 labels:
   - includeSelectors: true
     pairs:
-      app: amq-broker-2
+      app: amq-broker-1
 
 resources:
-  - ../../base
+  - ../../../base
 
 patches:
-#  - path: configmap-patch.yaml
   - path: pvc-patch.yaml
   - path: route-patch.yaml
   - path: service-patch.yaml

@@ -3,10 +3,10 @@ kind: StatefulSet
 metadata:
   name: amq-broker
 spec:
-  serviceName: "amq-broker-2"
+  serviceName: "amq-broker-1"
   selector:
     matchLabels:
-      app: amq-broker-2
+      app: amq-broker-1
   template:
     spec:
       containers:
@@ -17,7 +17,4 @@ spec:
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
-            claimName: amq-broker-2
-#        - name: broker-config
-#          configMap:
-#            name: amq-broker-2
+            claimName: amq-broker-1
