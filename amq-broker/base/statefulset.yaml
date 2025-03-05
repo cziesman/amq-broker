@@ -17,7 +17,3 @@ spec:
             - name: broker-config
               mountPath: /var/lib/artemis/etc/broker.xml
               subPath: broker.xml
-      volumes:
-        - name: broker-config
-          configMap:
-            name: amq-broker

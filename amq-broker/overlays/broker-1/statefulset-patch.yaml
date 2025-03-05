@@ -8,18 +8,7 @@ spec:
     matchLabels:
       app: amq-broker-1
   template:
-#    metadata:
-#      labels:
-#        app: amq-broker-1
     spec:
-      containers:
-        - name: activemq-artemis
-          ports:
-            - containerPort: 61616  # Different port
-            - containerPort: 8161   # Different web console port
-          volumeMounts:
-            - name: broker-storage
-              mountPath: /var/lib/artemis/data
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
