@@ -6,22 +6,18 @@ spec:
   selector:
     app: amq-broker-1
   ports:
-    - name: core-messaging
+    - name: core-messaging-1
       port: 61616
       targetPort: 61616
-    - name: web-console
+    - name: web-console-1
       port: 8161
       targetPort: 8161
-    - name: amqp
+    - name: amqp-1
       port: 5672
       targetPort: 5672
-    - name: mqtt
+    - name: mqtt-1
       port: 1883
       targetPort: 1883
-    - name: stomp
+    - name: stomp-1
       port: 61613
       targetPort: 61613
-    - name: clustering
-      port: 7800
-      targetPort: 7800
-  type: ClusterIP

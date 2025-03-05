@@ -5,11 +5,7 @@ metadata:
   labels:
     app: amq-broker
 spec:
-  host: amq-broker-rhel8-amq.apps.cluster-n2dhk.dynamic.redhatworkshops.io
-  to:
-    kind: Service
-    name: amq-broker-rhel8
-    weight: 100
-  port:
-    targetPort: 8161-tcp
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
   wildcardPolicy: None
