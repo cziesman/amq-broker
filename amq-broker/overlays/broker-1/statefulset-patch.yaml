@@ -9,6 +9,10 @@ spec:
       app: amq-broker-1
   template:
     spec:
+      containers:
+        - env:
+            - AMQ_USER=redhat
+            - AMQ_PASSWORD=redhat
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
