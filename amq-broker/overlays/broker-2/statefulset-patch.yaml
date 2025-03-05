@@ -11,6 +11,12 @@ spec:
     spec:
       containers:
         - name: activemq-artemis
+          ports:
+            - containerPort: 62616 
+            - containerPort: 8261
+            - containerPort: 6672
+            - containerPort: 2883
+            - containerPort: 62613
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
