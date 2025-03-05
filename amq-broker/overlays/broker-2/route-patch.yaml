@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: amq-broker
+spec:
+  host: amq-broker-2-amq.apps.cluster-n2dhk.dynamic.redhatworkshops.io
+  to:
+    kind: Service
+    name: amq-broker-2
+    weight: 100
+  port:
+    targetPort: 8261
