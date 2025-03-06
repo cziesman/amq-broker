@@ -13,7 +13,7 @@ spec:
         - name: activemq-artemis
           env:
             - name: AMQ_NAME
-              value: amq-broker-1
+              value: amq-broker-2
       volumes:
         - name: broker-storage
           persistentVolumeClaim:

@@ -13,4 +13,7 @@ patches:
       version: v1
       kind: StatefulSet
       name: amq-broker-1
-
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1
