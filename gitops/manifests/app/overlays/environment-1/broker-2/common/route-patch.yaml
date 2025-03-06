@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: amq-broker
 spec:
-  host: amq-broker-2-amq.apps.cluster-n2dhk.dynamic.redhatworkshops.io
+  host: amq-broker-2-amq.apps.cluster-pmxsf.dynamic.redhatworkshops.io
   to:
     kind: Service
     name: amq-broker-2
