@@ -1,0 +1,8 @@
+apiVersion: oauth.openshift.io/v1
+kind: OAuthClient
+metadata:
+  name: amq-broker
+grantMethod: auto
+redirectURIs:
+  - "http://amq-broker-service:8161/console"
+secret: "your-oauth-secret"

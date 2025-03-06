@@ -154,13 +154,17 @@ under the License.
                 <permission type="deleteDurableQueue" roles="admin"/>
                 <permission type="createAddress" roles="admin"/>
                 <permission type="deleteAddress" roles="admin"/>
-                <permission type="consume" roles="admin"/>
-                <permission type="browse" roles="admin"/>
-                <permission type="send" roles="admin"/>
+                <permission type="consume" roles="admin,amq-users"/>
+                <permission type="browse" roles="admin,amq-users"/>
+                <permission type="send" roles="admin,amq-users"/>
                 <!-- we need this otherwise ./artemis data imp wouldn't work -->
                 <permission type="manage" roles="admin"/>
             </security-setting>
         </security-settings>
+
+        <jaas-security>
+            <domain>OpenShiftLogin</domain>
+        </jaas-security>
 
         <address-settings>
             <!-- if you define auto-create on certain queues, management has to be auto-create -->
