@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: https://github.com/cziesman/amq-broker.git
     targetRevision: main
-    path: gitops/manifests/app/overlays/environment-1/broker-1
+    path: gitops/manifests/app/overlays/environment-1/broker-1/common
   destination:
     server: https://kubernetes.default.svc
     namespace: demo

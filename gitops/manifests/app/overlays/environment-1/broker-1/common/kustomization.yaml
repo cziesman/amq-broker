@@ -3,15 +3,15 @@ kind: Kustomization
 
 namespace: amq-demo
 
-nameSuffix: "-2"
+nameSuffix: "-1"
 
 labels:
   - includeSelectors: true
     pairs:
-      app: amq-broker-2
+      app: amq-broker-1
 
 resources:
-  - ../../../base
+  - ../../../../base
 
 patches:
   - path: pvc-patch.yaml
