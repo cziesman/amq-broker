@@ -6,4 +6,7 @@ data:
   login.config: |
     OpenShiftLogin {
       io.fabric8.openshift.auth.OpenShiftLoginModule required;
+        roleAttribute="roles"
+        validateUser=true
+        validateRoles=true;
     };

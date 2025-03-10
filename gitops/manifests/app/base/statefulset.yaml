@@ -21,7 +21,7 @@ spec:
           image: registry.redhat.io/amq7/amq-broker-rhel8:7.11.7-4.1740580601
           volumeMounts:
             - name: broker-storage
-              mountPath: /opt/amq/data
+              mountPath: /opt/amq/data/
             - name: broker-auth-config
-              mountPath: /opt/amq/auth
+              mountPath: /opt/amq/auth/
               subPath: login.config

@@ -161,7 +161,7 @@ under the License.
                 <permission type="manage" roles="admin"/>
             </security-setting>
         </security-settings>
-        
+
         <address-settings>
             <!-- if you define auto-create on certain queues, management has to be auto-create -->
             <address-setting match="activemq.management#">
