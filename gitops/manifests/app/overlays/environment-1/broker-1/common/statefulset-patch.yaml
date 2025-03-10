@@ -12,6 +12,8 @@ spec:
       containers:
         - name: activemq-artemis
           env:
+            - name: JAVA_OPTS
+              value: "-Djava.security.auth.login.config=/opt/amq/auth/login.config"
             - name: AMQ_NAME
               value: amq-broker-1
             - name: OAUTH_CLIENT_ID

@@ -24,4 +24,3 @@ spec:
               mountPath: /opt/amq/data/
             - name: broker-auth-config
               mountPath: /opt/amq/auth/
-              subPath: login.config
