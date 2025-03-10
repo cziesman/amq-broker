@@ -162,10 +162,14 @@ under the License.
             </security-setting>
         </security-settings>
 
-        <jaas-security>
-            <domain>OpenShiftLogin</domain>
-        </jaas-security>
-
+        <jaas-security-manager>
+            <login-module name="OpenShiftLogin" flag="required">
+                <module-option name="roleAttribute">roles</module-option>
+                <module-option name="validateUser">true</module-option>
+                <module-option name="validateRoles">true</module-option>
+            </login-module>
+        </jaas-security-manager>
+        
         <address-settings>
             <!-- if you define auto-create on certain queues, management has to be auto-create -->
             <address-setting match="activemq.management#">
