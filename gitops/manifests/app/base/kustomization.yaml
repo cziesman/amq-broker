@@ -7,7 +7,6 @@ configMapGenerator:
       - broker.xml
 
 resources:
-  - configmap.yaml
   - oauthclient.yaml
   - pvc.yaml
   - route.yaml

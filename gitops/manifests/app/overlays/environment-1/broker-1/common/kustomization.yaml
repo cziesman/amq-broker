@@ -14,8 +14,6 @@ resources:
   - ../../../../base
 
 patches:
-  - path: configmap-patch.yaml
-  - path: oauthclient-patch.yaml
   - path: pvc-patch.yaml
   - path: route-patch.yaml
   - path: service-patch.yaml

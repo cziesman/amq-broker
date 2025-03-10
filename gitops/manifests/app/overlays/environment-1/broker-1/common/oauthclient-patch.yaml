@@ -1,8 +1,0 @@
-apiVersion: oauth.openshift.io/v1
-kind: OAuthClient
-metadata:
-  name: amq-broker
-grantMethod: auto
-redirectURIs:
-  - "http://amq-broker-1.amq-demo.svc.cluster.local:8161/console"
-secret: amq-broker-oauth-1

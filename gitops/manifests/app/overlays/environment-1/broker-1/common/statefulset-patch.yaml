@@ -12,23 +12,9 @@ spec:
       containers:
         - name: activemq-artemis
           env:
-            - name: JAVA_OPTS
-              value: "-Djava.security.auth.login.config=/opt/amq/auth/login.config"
             - name: AMQ_NAME
               value: amq-broker-1
-            - name: OAUTH_CLIENT_ID
-              value: "amq-broker-oauth-1"
-            - name: OAUTH_CLIENT_SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: amq-broker-oauth-1
-                  key: oauth-secret
-            - name: OAUTH_TOKEN_ENDPOINT
-              value: "https://oauth-openshift.apps.cluster-pmxsf.dynamic.redhatworkshops.io/oauth/token"
       volumes:
         - name: broker-storage
           persistentVolumeClaim:
             claimName: amq-broker-1
-        - name: broker-auth-config
-          configMap:
-            name: amq-broker-auth-1
